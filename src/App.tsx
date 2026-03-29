@@ -1,16 +1,26 @@
 import './styles/theme.css'
 import './styles/global.css'
+import { Container } from './components/containter';
+import { Heading } from './components/Heading';
 
 function App(){
     return (
         <>
-        <div className="container">
-            <div className="content">
+            <Container>
                 <section>
-                   
+                    <Heading>
+                        LOGO
+                    </Heading>
                 </section>
-            </div>
-        </div>
+            </Container>
+
+            <Container>
+                <section>
+                    <Heading>
+                        MENU
+                    </Heading>
+                </section>
+            </Container>
         </>
     )
 }
