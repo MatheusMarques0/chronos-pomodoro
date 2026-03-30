@@ -2,16 +2,13 @@ import './styles/theme.css'
 import './styles/global.css'
 import { Container } from './components/containter';
 import { Heading } from './components/Heading';
+import { Logo } from './components/Logo';
 
 function App(){
     return (
         <>
             <Container>
-                <section>
-                    <Heading>
-                        LOGO
-                    </Heading>
-                </section>
+               <Logo/>
             </Container>
 
             <Container>
