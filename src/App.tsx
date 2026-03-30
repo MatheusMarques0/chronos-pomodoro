@@ -1,8 +1,8 @@
 import './styles/theme.css'
 import './styles/global.css'
 import { Container } from './components/containter';
-import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
 
 function App(){
     return (
@@ -12,11 +12,7 @@ function App(){
             </Container>
 
             <Container>
-                <section>
-                    <Heading>
-                        MENU
-                    </Heading>
-                </section>
+                <Menu/>
             </Container>
         </>
     )
