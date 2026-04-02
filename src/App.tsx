@@ -3,6 +3,7 @@ import './styles/global.css'
 import { Container } from './components/containter';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
+import DefaultInput from './components/DefaultInput';
 
 function App(){
     return (
@@ -18,8 +19,7 @@ function App(){
             <Container>
                 <form className='form' action="">
                     <div className="FormRow">
-                        <label htmlFor="menuInput">task</label>
-                        <input id='menuInput' type="text" />
+                        <DefaultInput type='text'/>
                     </div>
 
                     <div className="FormRow">
