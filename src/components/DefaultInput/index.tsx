@@ -1,6 +1,6 @@
 type DefaultInputProps = {
     id: string;
-    labelText?: string;
+    labelText: string;
 } & React.ComponentProps<'input'>
 
 export function DefaultInput({ id
@@ -9,8 +9,7 @@ export function DefaultInput({ id
       ...rest }: DefaultInputProps){
     return(
         <>
-        {labelText && <label htmlFor={id}>{labelText}</label>} {/*Se tivesse mais de uma linha iria precisar usar ()*/ }
-        {/*Se tiver label text, faça isso:*/}
+        <label htmlFor={id}>{labelText}</label>
         <input id={id} type={type} {...rest} />
         </>
     )
