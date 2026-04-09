@@ -19,7 +19,7 @@ function App(){
             <Container>
                 <form className='form' action="">
                     <div className="FormRow">
-                        <DefaultInput type='text'/>
+                        <DefaultInput labelText='task' id='menuInput' type='text'/>
                     </div>
 
                     <div className="FormRow">
