@@ -19,7 +19,9 @@ function App(){
             <Container>
                 <form className='form' action="">
                     <div className="FormRow">
-                        <DefaultInput labelText='task' id='menuInput' type='text'/>
+                        <DefaultInput labelText='task' id='menuInput' type='text'
+                        placeholder='Digite algo'
+                        />
                     </div>
 
                     <div className="FormRow">
@@ -27,8 +29,7 @@ function App(){
                     </div>
 
                     <div className="FormRow">
-                        <p>Ciclos</p>
-                        <p>0 0 0 0 0 0 0</p>
+                        
                     </div>
 
                     <div className="FormRow">
