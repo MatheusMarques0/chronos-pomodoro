@@ -4,6 +4,7 @@ import { Container } from './components/containter';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import DefaultInput from './components/DefaultInput';
+import Cycles from './components/Cycles';
 
 function App(){
     return (
@@ -29,7 +30,7 @@ function App(){
                     </div>
 
                     <div className="FormRow">
-                        
+                        <Cycles/>
                     </div>
 
                     <div className="FormRow">
