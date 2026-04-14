@@ -9,6 +9,12 @@ export function Menu(){
 
   function handleThemeChange(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>){
     event.preventDefault()
+
+    setTheme(prevTheme => {
+      const nextTheme = prevTheme === 'dark' ? 'light' : 'dark'
+      return nextTheme
+    })
+    document.documentElement.setAttribute('dark-theme', theme)
   }
 
    return <nav className={styles.menu}>
