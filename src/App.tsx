@@ -9,32 +9,10 @@ import DefaultButton from './components/DefaultButton';
 import { PlayCircleIcon } from 'lucide-react';
 import { CountDown } from './components/CountDown';
 import { Footer } from './components/Footer';
-import { useState } from 'react';
-import { Heading } from './components/Heading';
 
 function App(){
-    /*todos os componentes que usam número saibam das mudança em seu valor.
-
-    Sempre que você usar useState, não use atribuição diretamente.
-
-    
-    const [numero, setNumero] = useState(() => {
-       console.log('lazy Inicialization')
-        return 0
-    })
-    */
-   const [numero, setNumero] = useState(0)
-
-    function handleClick(){
-        //setNumero(prevState => prevState + 1)
-        setNumero(1)
-    }
-
     return (
         <>
-            <Heading>Número: {numero}</Heading>
-            <button onClick={handleClick}>Aumenta</button>
-
             <Container>
                 <Logo/>
             </Container>
