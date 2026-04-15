@@ -1,6 +1,6 @@
 import styles from './Menu.module.css';
 import { HistoryIcon, HouseIcon, SettingsIcon, SunIcon } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 type AvaiableThemes = 'dark' | 'light'
 
@@ -14,8 +14,11 @@ export function Menu(){
       const nextTheme = prevTheme === 'dark' ? 'light' : 'dark'
       return nextTheme
     })
-    document.documentElement.setAttribute('dark-theme', theme)
   }
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+  }, [theme])
 
    return <nav className={styles.menu}>
     <h1>{theme}</h1>
