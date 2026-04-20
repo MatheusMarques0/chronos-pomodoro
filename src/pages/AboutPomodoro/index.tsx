@@ -18,7 +18,7 @@ export function AboutPomodoro() {
             garantir descansos para evitar o cansaço mental.
           </p>
 
-          <img src='https://placehold.co/1920x1080' alt='' />
+          <img src='https://placehold.co/1920x1080' alt='' width={600} height={400}/>
 
           <h2>Como funciona o Pomodoro tradicional?</h2>
           <ul>
