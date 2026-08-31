@@ -4,23 +4,24 @@ import { MainForm } from "../../components/MainForm";
 import type { taskStateModel } from "../../models/TaskStateModel";
 import { MainTemplate } from "../../templates/MainTemplate";
 
-type HomeProps = {
+export type HomeProps = {
     state: taskStateModel,
     setState: React.Dispatch<React.SetStateAction<taskStateModel>>
 }
 
-//agora tempos o estado e a função que configura o estado dentro da home
-
 export function Home(props: HomeProps){
-    const {state, setState} = props
     return (
         <MainTemplate>
             <Container>
-                <CountDown/>
+                <CountDown
+                    {...props}
+                 />
             </Container>
 
             <Container>
-                <MainForm/>
+                <MainForm
+                    {...props}
+                />
             </Container>
         </MainTemplate> 
     )
