@@ -3,6 +3,7 @@ import './styles/global.css'
 import { Home } from './pages/home/main';
 import { useState } from 'react';
 import type { taskStateModel } from './models/TaskStateModel';
+import { TaskContext } from './contexts/TaskContext';
 
 /*export type taskStateModel = {
     tasks: TaskModel[];
@@ -33,7 +34,9 @@ const initialState: taskStateModel = {
 function App(){
     const [state, setState] = useState(initialState) //a gente não precisa desses useState no App, estamos criando ele dentro de App porque vamos jogar ele em componentes filhos de app
     return (
-        <Home state={state} setState={setState}/>
+        <TaskContext.Provider value={{outracoisa: 123}}>
+            <Home/>
+        </TaskContext.Provider>
     )
 }
 
